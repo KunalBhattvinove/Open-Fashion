@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Mushop</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="productname1">21WN reversible angora cardigan</string>
+    <string name="proda">21WN</string>
+    <string name="price">$120</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+    <string name="submit">SUBMIT</string>
+    <string name="login">LOGIN</string>
+    <string name="home">BACK TO HOME</string>
+    <string name="bag">Oblong bag</string>
+    <string name="exp">Explore More</string>
+    <string name="desc">You guys know how much I love mixing high and low-end – it’s the best way to get the most bang for your buck while still elevating your wardrobe. The same goes for handbags! And honestly they are probably the best pieces to mix and match. I truly think the key to completing a look is with a great bag and I found so many this year that I wanted to share a round-up of my most worn handbags.</string>
+    <string name="acc"><![CDATA[& ACCESSORIES]]></string>
+    <string name="desc2">I found this Saint Laurent canvas handbag this summer and immediately fell in love. The neutral fabrics are so beautiful and I like how this handbag can also carry into fall. The mini Fendi bucket bag with the sheer fabric is so fun and such a statement bag. Also this DeMellier off white bag is so cute to carry to a dinner with you or going out, it’s small but not too small to fit your phone and keys still.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--string name="story"><![CDATA[Open Fashion - Free Ecommerce UI Kit is a free download UI kit. You can open Open Fashion - Free Ecommerce UI Kit file by Figma.
+Create stunning shop with bulletproof guidelines and thoughtful components. Its library contains more than 50+ components supporting Light & Dark Mode and 60+ ready to use mobile screens."
+]]></string>-->
+    <string name="story"><![CDATA[Open Fashion - Free Ecommerce UI Kit is a free download UI kit. You can open Open Fashion - Free Ecommerce UI Kit file by Figma.
+Create stunning shop with bulletproof guidelines and thoughtful components. Its library contains more than 50+ components supporting Light & Dark Mode and 60+ ready to use mobile screens."
+]]></string>
+    <string name="contact">Need an ASAP answer? Contact us via chat, 24/7! For existing furniture orders, please call us.</string>
+    <!-- <string name="care">To keep your jackets and coats clean, you only need to freshen them up and go over them with a cloth or a clothes brush. If you need to dry clean a garment, look for a dry cleaner that uses technologies that are respectful of the environment.</string>-->
+    <string name="contact_chat">You can text us at 800-309-2622 – or click on the “text us” link below on your mobile device. Please allow the system to acknowledge a simple greeting (even “Hi” will do!) before providing your question/order details. Consent is not required for any purchase. Message and data rates may apply. Text messaging may not be available via all carriers.</string>
+    <string name="twitter_contact">To send us a private or direct message, like @Open Fashion on Facebook or follow us on Twitter. We’ll get back to you ASAP. Please include your name, order number, and email address for a faster response!</string>
+    <string name="care">To keep your jackets and coats clean, you only need to freshen them up and go over them with a cloth or a clothes brush. If you need to dry clean a garment, look for a dry cleaner that uses technologies that are respectful of the environment.</string>
+</resources>

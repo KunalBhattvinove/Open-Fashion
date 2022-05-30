@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Screens.Mainproduct">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-40dp"
+        tools:layout_editor_absoluteY="-352dp"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+
+
+
+            <ImageView
+                android:id="@+id/productimg"
+                android:layout_width="400dp"
+                android:layout_height="500dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/product"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOHAN"
+                android:textColor="@color/black"
+                android:fontFamily="@font/tenor"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@id/productimg"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/product_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tenor"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="Recycle Boucle Knit Cardigan Pink"
+                app:layout_constraintTop_toBottomOf="@id/product_name"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 120"
+                android:textColor="@color/dollar"
+                app:layout_constraintTop_toBottomOf="@id/product_detail"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/tenor"
+                app:layout_constraintTop_toBottomOf="@id/product_price"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <ImageView
+                android:id="@+id/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_brightness_1_24_black"
+                app:layout_constraintStart_toEndOf="@id/color"
+                app:layout_constraintTop_toBottomOf="@id/product_price"
+                app:tint="@color/black" />
+
+            <ImageView
+                android:id="@+id/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_brightness_1_24_orange"
+                app:layout_constraintStart_toEndOf="@id/black"
+                app:layout_constraintTop_toBottomOf="@id/product_price"
+             />
+
+            <ImageView
+                android:id="@+id/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_brightness_1_24_grey"
+                app:layout_constraintStart_toEndOf="@id/orange"
+                app:layout_constraintTop_toBottomOf="@id/product_price"
+                 />
+
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/tenor"
+                app:layout_constraintStart_toEndOf="@id/grey"
+                app:layout_constraintTop_toBottomOf="@id/product_price"/>
+
+            <TextView
+                android:id="@+id/small_pro"
+                android:textColor="@color/black"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outline"
+                android:text="S"
+                android:padding="7dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintStart_toEndOf="@id/size"
+                app:layout_constraintTop_toBottomOf="@id/product_price"/>
+
+            <TextView
+                android:id="@+id/medium_pro"
+                android:layout_width="30dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outline"
+                android:text="M"
+                android:padding="7dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintStart_toEndOf="@id/small_pro"
+                app:layout_constraintTop_toBottomOf="@id/product_price"/>
+
+            <TextView
+                android:id="@+id/large_pro"
+                android:layout_width="30dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outline"
+                android:text="L"
+                android:padding="7dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintStart_toEndOf="@id/medium_pro"
+                app:layout_constraintTop_toBottomOf="@id/product_price"/>
+
+            <Button
+                android:id="@+id/addtobasket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:text="ADD TO BASKET"
+
+                android:drawableStart="@drawable/ic_baseline_add_241"
+                android:drawableEnd="@drawable/ic_baseline_favorite_border_24"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="40dp"
+                android:paddingRight="10dp"
+                android:drawableTint="@color/white"
+                android:textAlignment="textStart"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/materials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MATERIALS"
+                android:textColor="@color/black"
+                android:fontFamily="@font/tenor"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@id/addtobasket"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/materials_desc"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tenor"
+                android:text="We work with monitoring programmes to ensure compliance with safety, health and quality standards for our products. "
+                app:layout_constraintTop_toBottomOf="@id/materials"
+                android:padding="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/care"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CARE"
+                android:textColor="@color/black"
+                android:fontFamily="@font/tenor"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@id/materials_desc"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/care_desc"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tenor"
+                android:text="@string/care"
+                app:layout_constraintTop_toBottomOf="@id/care"
+                android:padding="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/bleach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do not use bleach"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/tenor"
+                android:layout_marginTop="10dp"
+                android:textAlignment="viewStart"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@id/care_desc"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/tumble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do not tumble dry"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:fontFamily="@font/tenor"
+                android:layout_marginTop="10dp"
+                android:textAlignment="viewStart"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@id/bleach"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/dryclean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dry clean with tetrachloroethylene"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/tenor"
+                android:layout_marginTop="10dp"
+                android:textAlignment="viewStart"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@id/tumble"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/iron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iron at a maximum of 110C/230F"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/tenor"
+                android:layout_marginTop="10dp"
+                android:textAlignment="viewStart"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@id/dryclean"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/care_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CARE"
+                android:textColor="@color/black"
+                android:fontFamily="@font/tenor"
+                android:textSize="17dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@id/iron"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/freeflat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_delivery_dining_24"
+                android:text="Free Flat Rate Shipping"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:drawablePadding="5dp"
+                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/tenor"
+                app:layout_constraintTop_toBottomOf="@id/care_product"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/cod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_discount_24"
+                android:text="COD Policy"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:drawablePadding="5dp"
+                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/tenor"
+                app:layout_constraintTop_toBottomOf="@id/freeflat"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/returnpolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_repeat_24"
+                android:text="Return Policy"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:drawablePadding="5dp"
+                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/tenor"
+                app:layout_constraintTop_toBottomOf="@id/cod"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/youmayalsolike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+
+                app:layout_goneMarginTop="30dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="50dp"
+                android:text="YOU MAY ALSO LIKE"
+                android:fontFamily="@font/tenor"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/returnpolicy"/>
+
+            <ImageView
+                android:id="@+id/divider9"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/divider"
+                app:layout_constraintTop_toBottomOf="@id/youmayalsolike"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler10"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/divider9"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/recycler10"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/twitter"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/twitter"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="130dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/instafollow"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/instablack"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="30dp"
+                        app:tint="@color/black" />
+                    <ImageView
+                        android:id="@+id/youtube"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/youtube"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginRight="130dp"
+                        android:layout_marginTop="28dp"
+                        app:tint="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/divider3"
+                        android:layout_width="125dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/divider"
+                        app:layout_constraintTop_toBottomOf="@id/instafollow"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/support"
+                        android:layout_width="184dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+
+                        android:text="support@openui.design"
+                        android:fontFamily="@font/tenor"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/divider3"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/number"
+                        android:layout_width="184dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="+60 825 876"
+                        android:fontFamily="@font/tenor"
+                        android:textColor="@color/black"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/support"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="70dp"/>
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="184dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="08:00 - 22:00 - Everyday"
+                        android:fontFamily="@font/tenor"
+                        android:textColor="@color/black"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/number"
+                        android:layout_marginTop="5dp" />
+
+                    <ImageView
+                        android:id="@+id/divider5"
+                        android:layout_width="125dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/divider"
+                        app:layout_constraintTop_toBottomOf="@id/time"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        />
+
+                    <TextView
+                        android:id="@+id/About"
+                        android:layout_width="47dp"
+                        android:layout_height="24dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:text="About"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/tenor"
+                        app:layout_constraintTop_toBottomOf="@id/divider5"
+                        android:layout_marginLeft="90dp"
+                        app:layout_constraintLeft_toLeftOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/contact"
+                        android:layout_width="67dp"
+                        android:layout_height="24dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:text="Contact"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/tenor"
+                        app:layout_constraintTop_toBottomOf="@id/divider5"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/blog"
+                        android:layout_width="47dp"
+                        android:layout_height="24dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:text="Blog"
+                        android:layout_marginLeft="270dp"
+                        android:fontFamily="@font/tenor"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/divider5"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

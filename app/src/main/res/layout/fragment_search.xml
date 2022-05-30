@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Screens.Search">
+
+    <EditText
+        android:id="@+id/searchitems"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:hint="Search items"
+        android:textColorHint="@color/black"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/tenor"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_baseline_close_242"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/recent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Recent search"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/tenor"
+        app:layout_constraintTop_toBottomOf="@id/searchitems"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/dress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dress"
+        android:textColor="@color/black"
+        android:padding="7dp"
+        android:drawablePadding="2dp"
+        android:fontFamily="@font/tenor"
+        android:drawableEnd="@drawable/ic_baseline_close_24_small"
+        android:background="@drawable/outline"
+        app:layout_constraintTop_toBottomOf="@id/recent"
+        android:backgroundTint="@color/grey"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/collection_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Collection"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/dress"
+        android:padding="7dp"
+        android:fontFamily="@font/tenor"
+        android:drawablePadding="2dp"
+        android:drawableEnd="@drawable/ic_baseline_close_24_small"
+        android:background="@drawable/outline"
+        app:layout_constraintTop_toBottomOf="@id/recent"
+        android:backgroundTint="@color/grey"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/nike_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nike"
+        android:textColor="@color/black"
+        android:fontFamily="@font/tenor"
+        android:padding="7dp"
+        android:drawablePadding="2dp"
+        android:drawableEnd="@drawable/ic_baseline_close_24_small"
+        android:background="@drawable/outline"
+        app:layout_constraintTop_toBottomOf="@id/recent"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintStart_toEndOf="@id/collection_search"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/popular_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Popular search terms"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/tenor"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/dress"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/trend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trend"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:fontFamily="@font/tenor"
+        app:layout_constraintTop_toBottomOf="@id/popular_search"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/dress_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dress"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:fontFamily="@font/tenor"
+        app:layout_constraintTop_toBottomOf="@id/trend"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/bag_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bag"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:fontFamily="@font/tenor"
+        app:layout_constraintTop_toBottomOf="@id/dress_search"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tshirt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tshirt"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:fontFamily="@font/tenor"
+        app:layout_constraintTop_toBottomOf="@id/bag_search"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/beauty_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beauty"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:fontFamily="@font/tenor"
+        app:layout_constraintTop_toBottomOf="@id/tshirt"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/accessories_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accessories"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:fontFamily="@font/tenor"
+        app:layout_constraintTop_toBottomOf="@id/beauty_search"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

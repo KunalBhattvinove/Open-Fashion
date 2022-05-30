@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Screens.PlaceOrder">
+
+    <TextView
+        android:id="@+id/add_shipping_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="70dp"
+        android:text="ADD SHIPPING ADDRESS"
+        android:fontFamily="@font/tenor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/divider20"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/divider"
+        app:layout_constraintTop_toBottomOf="@id/add_shipping_add"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="175dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:hint="First name"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/tenor"
+        app:layout_constraintTop_toBottomOf="@id/divider20"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:hint="Last name"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/tenor"
+
+        app:layout_constraintStart_toEndOf="@+id/first_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider20"/>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/tenor"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_name"/>
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:textColor="@color/black"
+
+        android:textColorHint="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/tenor"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address"/>
+
+    <EditText
+        android:id="@+id/state"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:hint="State"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/tenor"
+        app:layout_constraintStart_toStartOf="@id/first_name"
+        app:layout_constraintTop_toBottomOf="@id/city"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/zip"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:hint="ZIP code"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/tenor"
+        android:inputType="number"
+        android:maxLength="6"
+        app:layout_constraintStart_toEndOf="@+id/state"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/city"/>
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/tenor"
+        android:maxLength="10"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/state"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:text="ADD NOW"
+        android:id="@+id/addnow"
+        android:fontFamily="@font/tenor"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_about.xml" value="0.14629629629629629" />
+        <entry key="app/src/main/res/layout/fragment_bloglist.xml" value="0.16236068895643363" />
+        <entry key="app/src/main/res/layout/fragment_cart.xml" value="0.14629629629629629" />
+        <entry key="app/src/main/res/layout/fragment_checkout2.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_collections.xml" value="0.14629629629629629" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

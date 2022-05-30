@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Screens.Collections">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-40dp"
+        tools:layout_editor_absoluteY="-352dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardcollection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:backgroundTint="@color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                >
+
+                <TextView
+                    android:layout_width="240dp"
+                    android:layout_height="190dp"
+                    android:fontFamily="@font/bodoni"
+                    android:text="10"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#363333"
+                    android:textSize="180dp"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="70dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="October"
+                    android:layout_marginLeft="107dp"
+                    android:layout_marginTop="90dp"
+                    android:fontFamily="@font/bodoni"
+                    android:textColor="@color/white"
+                    android:textSize="50dp"
+                    android:textStyle="italic"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COLLECTION"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/tenor"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginLeft="140dp"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_marginTop="180dp"
+                    android:src="@drawable/collectionmodel1"
+                    />
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="220dp"
+                    android:fontFamily="@font/bodoni"
+                    android:text="10"
+                    android:layout_marginTop="440dp"
+                    android:textColor="#363333"
+                    android:textSize="200dp"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="160dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/item1_collection"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:src="@drawable/collection_item1"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@id/cardcollection"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/brands_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Octo"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/item1_collection"
+                android:fontFamily="@font/tenor"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/names_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reversible angora cardigan"
+                android:fontFamily="@font/tenor"
+                android:textSize="13dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/brands_collection"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/price_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$120"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/dollar"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/names_collection"/>
+
+            <ImageView
+                android:id="@+id/item2_collection"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:src="@drawable/collection_item2"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@id/cardcollection"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/brands_collection2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Octo"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/item2_collection"
+                android:fontFamily="@font/tenor"
+                android:textSize="15dp"
+                android:layout_marginRight="140dp"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/names_collection2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reversible angora cardigan"
+                android:fontFamily="@font/tenor"
+                android:textSize="13dp"
+                android:layout_marginTop="5dp"
+
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/brands_collection2"
+                android:layout_marginRight="10dp"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/price_collection2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$120"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/dollar"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="140dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/names_collection2"/>
+
+            <ImageView
+                android:id="@+id/item3_collection2"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:src="@drawable/collection_item3"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@id/names_collection"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/brands_collection32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Octo"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/item3_collection2"
+                android:fontFamily="@font/tenor"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/names_collection32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reversible angora cardigan"
+                android:fontFamily="@font/tenor"
+                android:textSize="13dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/brands_collection32"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/price_collection32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$120"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/dollar"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/names_collection32"/>
+
+    <ImageView
+        android:id="@+id/item3_collection"
+        android:layout_width="180dp"
+        android:layout_height="220dp"
+        android:src="@drawable/collection_item3"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/names_collection"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/brands_collection3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Octo"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/item3_collection"
+        android:fontFamily="@font/tenor"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/names_collection3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reversible angora cardigan"
+        android:fontFamily="@font/tenor"
+        android:textSize="13dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/brands_collection3"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/price_collection3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$120"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/dollar"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/names_collection3"/>
+
+
+    <ImageView
+        android:id="@+id/item4_collection"
+        android:layout_width="180dp"
+        android:layout_height="220dp"
+        android:src="@drawable/collection_item4"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/names_collection2"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/brands_collection4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Octo"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/item4_collection"
+        android:fontFamily="@font/tenor"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="140dp"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/names_collection4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reversible angora cardigan"
+        android:fontFamily="@font/tenor"
+        android:textSize="13dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/brands_collection4"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/price_collection4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$120"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/dollar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="140dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/names_collection4"/>
+
+
+    <TextView
+        android:id="@+id/youmayalso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOU MAY ALSO LIKE"
+        android:fontFamily="@font/tenor"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/price_collection4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dividerwhite"
+        app:layout_constraintTop_toBottomOf="@id/youmayalso"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="7dp"/>
+
+
+    <ImageView
+        android:id="@+id/collectionrecycler"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                android:src="@drawable/collectionrecycler1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"/>
+
+    <TextView
+        android:id="@+id/recyclernames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BLACK COLLECTION"
+        android:textColor="@color/white"
+        android:fontFamily="@font/tenor"
+
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/collectionrecycler"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/recyclernames"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/twitter"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/twitter"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="130dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <ImageView
+                android:id="@+id/instafollow"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/instablack"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="40dp"/>
+            <ImageView
+                android:id="@+id/youtube"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/youtube"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="130dp"
+                android:layout_marginTop="38dp"/>
+
+            <ImageView
+                android:id="@+id/divider3"
+                android:layout_width="125dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/divider"
+                app:layout_constraintTop_toBottomOf="@id/instafollow"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/support"
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="support@openui.design"
+                android:fontFamily="@font/tenor"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/divider3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="+60 825 876"
+                android:fontFamily="@font/tenor"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/support"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="70dp"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="08:00 - 22:00 - Everyday"
+                android:fontFamily="@font/tenor"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/number"
+                android:layout_marginTop="5dp" />
+
+            <ImageView
+                android:id="@+id/divider5"
+                android:layout_width="125dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/divider"
+                app:layout_constraintTop_toBottomOf="@id/time"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/About"
+                android:layout_width="47dp"
+                android:layout_height="24dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:text="About"
+                android:fontFamily="@font/tenor"
+                app:layout_constraintTop_toBottomOf="@id/divider5"
+                android:layout_marginLeft="90dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="67dp"
+                android:layout_height="24dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:text="Contact"
+                android:fontFamily="@font/tenor"
+                app:layout_constraintTop_toBottomOf="@id/divider5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/blog"
+                android:layout_width="47dp"
+                android:layout_height="24dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:text="Blog"
+                android:layout_marginLeft="270dp"
+                android:fontFamily="@font/tenor"
+                app:layout_constraintTop_toBottomOf="@id/divider5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
